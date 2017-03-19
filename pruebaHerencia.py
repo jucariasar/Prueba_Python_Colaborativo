@@ -16,3 +16,8 @@ s2 = EmpleadoAsalariado(nombres2, empresas2, salarios2)
 print(s2)
 print(s1)
 print(p1)
+
+personas = [p1, s1, s2]
+
+for i in personas:
+	print(i.getNombre())
