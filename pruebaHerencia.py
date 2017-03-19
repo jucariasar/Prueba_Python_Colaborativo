@@ -1,6 +1,7 @@
 from persona import Persona 
 from empleado import Empleado 
 from empleadoasalariado import EmpleadoAsalariado 
+from empleadoPorComision import EmpleadoPorComision
 
 p1=Persona("Laura")
 print(p1.getNombre())
@@ -21,3 +22,5 @@ personas = [p1, s1, s2]
 
 for i in personas:
 	print(i.getNombre())
+
+e1 = EmpleadoPorComision("Jhon", "Mcdoalns", 0.3, 500)

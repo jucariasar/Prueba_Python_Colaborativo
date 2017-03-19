@@ -1,4 +1,4 @@
-fron empleado import empleado
+from empleado import Empleado
 
 class EmpleadoPorComision(Empleado):
 	def __init__(self, nombre, empresa, totalVentas, comision):
@@ -18,6 +18,9 @@ class EmpleadoPorComision(Empleado):
 	def setComision(self, comision):
 		self._comision = comision
 
+	def salarioTotal(self):
+		return (self.getTotalVentas() + float(self.getTotalVentas() * self.getComision()))
+
 	def __str__(self):
 		return (super().__str__() + "\nTotal Ventas: " + str(self._totalVentas) + 
-			"Comision: " + str(self._comision))
+			"Comision: " + str(self._comision) + "Salario Total: " + self.salarioTotal())
