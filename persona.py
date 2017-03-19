@@ -7,3 +7,6 @@ class Persona():
 
 	def setNombre(self, nombre):
 		self._nombre = nombre
+
+	def __str__(self):
+		return("\nNombre: " + self._nombre)
