@@ -14,3 +14,5 @@ salarios2 = int(input("Ingrese el salario del nuevo empleado: "))
 s2 = EmpleadoAsalariado(nombres2, empresas2, salarios2)
 
 print(s2)
+print(s1)
+print(p1)
