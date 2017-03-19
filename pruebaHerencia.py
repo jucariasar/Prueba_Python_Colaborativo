@@ -13,14 +13,13 @@ nombres2 = input("Ingrese el nombre del nuevo empleado:")
 empresas2 = input("Ingrese la empresa del nuevo empleado: ")
 salarios2 = int(input("Ingrese el salario del nuevo empleado: "))
 s2 = EmpleadoAsalariado(nombres2, empresas2, salarios2)
+e1 = EmpleadoPorComision("Jhon", "Mcdoalns", 0.3, 500)
 
 print(s2)
 print(s1)
 print(p1)
 
-personas = [p1, s1, s2]
+personas = [p1, s1, s2, e1]
 
 for i in personas:
 	print(i.getNombre())
-
-e1 = EmpleadoPorComision("Jhon", "Mcdoalns", 0.3, 500)
