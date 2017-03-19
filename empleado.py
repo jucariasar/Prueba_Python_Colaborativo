@@ -10,3 +10,6 @@ class Empleado(Persona):
 
 	def setEmpresa(self, empresa):
 		self._empresa=empresa
+
+	def __str__(self):
+		return (super().__str__() + "\nEmpresa: " + self._empresa)

@@ -12,3 +12,6 @@ class EmpleadoAsalariado(Empleado):
 
 	def setSalario(self, salario):
 		self._salario = salario
+
+	def __str__(self):
+		return (super().__str__() + "\nSalario: " + str(self._salario))
